@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Siva Hair Salon | Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <section class="admin-section">
+
+        <div class="admin-container">
+
+            <h1>Salon Appointments</h1>
+
+            <p class="admin-subtitle">
+                Manage customer appointments
+            </p>
+            <div class="admin-stats">
+
+    <div class="stat-card">
+        <span>Total</span>
+        <strong id="totalCount">0</strong>
+    </div>
+
+    <div class="stat-card">
+        <span>Pending</span>
+        <strong id="pendingCount">0</strong>
+    </div>
+
+    <div class="stat-card">
+        <span>Confirmed</span>
+        <strong id="confirmedCount">0</strong>
+    </div>
+
+</div>
+            <div class="admin-actions">
+
+    <div class="appointment-count">
+        Total Appointments:
+        <span id="appointmentCount">0</span>
+        <input
+    type="text"
+    id="searchAppointments"
+    placeholder="Search customer..."
+>
+    </div>
+
+    <button id="refreshAppointments">
+        Refresh
+    </button>
+
+</div>
+
+            <div id="appointmentsContainer">
+                Loading appointments...
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
