@@ -114,8 +114,7 @@ if (bookingForm) {
     try {
 
         // Send appointment to backend
-        const response = await fetch(
-            "http://localhost:5000/api/appointments",
+        const response = await fetch("https://siva-hair-style.onrender.com/api/appointments", 
             {
                 method: "POST",
 

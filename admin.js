@@ -13,8 +13,8 @@ async function loadAppointments() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/appointments"
-        );
+    "https://siva-hair-style.onrender.com/api/appointments"
+);
 
         const appointments = await response.json();
         appointmentCount.textContent = appointments.length;
@@ -122,7 +122,7 @@ async function updateStatus(id, status) {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/appointments/${id}/status`,
+            `https://siva-hair-style.onrender.com/api/appointments/${id}/status`,
             {
                 method: "PATCH",
 
